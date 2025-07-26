@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-👋 Hi, I'm Reva (pronounced *Ray-vah*) — a fully funded Master of Science in Engineering (MSE) student in Computer Science at [Princeton University](https://www.cs.princeton.edu/), where I'm fortunate to be advised by [Manoel Horta Ribeiro](https://www.cs.princeton.edu/~manoel/).
+👋 Hi, I'm Reva (pronounced *Ray-vah*)! I'm a fully funded Master of Science in Engineering (MSE) student in Computer Science at [Princeton University](https://www.cs.princeton.edu/), where I'm fortunate to be advised by [Manoel Horta Ribeiro](https://www.cs.princeton.edu/~manoel/).
 
 Prior to Princeton, I earned my BSc in Software Engineering from [George Mason University](https://cs.gmu.edu/) (Spring 2025), where I was part of the NLP group led by [Antonios Anastasopoulos](https://cs.gmu.edu/~antonis/).
 
