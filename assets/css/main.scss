@@ -42,6 +42,30 @@
     "vendor/font-awesome/v4-shims"
 ;
 
+@font-face {
+  font-family: "KaTeX_SansSerif";
+  src: url("https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KaTeX_SansSerif";
+  src: url("https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KaTeX_SansSerif";
+  src: url("https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
 .news-panel {
   max-height: 240px;
   overflow-y: auto;
@@ -110,4 +134,20 @@
 
 .teaching-blurb {
   margin-top: 0.35rem !important;
+}
+
+.site-mark {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin-right: 0.45rem;
+  vertical-align: -0.12rem;
+  border-radius: 2px;
+}
+
+#theme-icon {
+  display: inline-block;
+  width: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1;
 }
