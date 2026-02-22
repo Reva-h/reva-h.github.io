@@ -16,3 +16,16 @@ I've also had the privilege of working with [Jason Eisner](https://www.cs.jhu.ed
 
 My research interests broadly concern social media and lie at the intersection of natural language processing, social computing, and computational social science. I am interested in using computational techniques to explore how digital forms of communication influence our thinking. I’m eager to apply these insights to better social media platforms, aiming to foster more meaningful online interactions and raise awareness of the biases that such technologies can instill.
 
+## News
+
+<div class="news-panel" role="region" aria-label="News and announcements">
+  <ul class="news-list">
+    {% for item in site.data.news %}
+      <li class="news-item">
+        <span class="news-date">{{ item.date }}</span>
+        <span class="news-text">{{ item.text }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+

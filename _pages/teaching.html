@@ -7,6 +7,32 @@ author_profile: true
 
 {% include base_path %}
 
+<h2>Graduate</h2>
+
+<div class="teaching-list">
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% if post.type contains "Graduate" %}
+    <article class="teaching-item">
+      <h3 class="teaching-course">{{ post.title }}</h3>
+      <p class="teaching-meta"><strong>{{ post.role }}</strong> · {{ post.venue }} · {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+      <p class="teaching-blurb">{{ post.blurb }}</p>
+    </article>
+  {% endif %}
 {% endfor %}
+</div>
+
+<h2>Undergraduate</h2>
+
+<p>Course support and instructional work for foundational computer science and data science courses.</p>
+
+<div class="teaching-list">
+{% for post in site.teaching reversed %}
+  {% if post.type contains "Undergraduate" %}
+    <article class="teaching-item">
+      <h3 class="teaching-course">{{ post.title }}</h3>
+      <p class="teaching-meta"><strong>{{ post.role }}</strong> · {{ post.venue }} · {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+      <p class="teaching-blurb">{{ post.blurb }}</p>
+    </article>
+  {% endif %}
+{% endfor %}
+</div>

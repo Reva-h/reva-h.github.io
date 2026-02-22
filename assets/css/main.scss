@@ -38,5 +38,76 @@
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
+    "vendor/font-awesome/brands",
+    "vendor/font-awesome/v4-shims"
 ;
+
+.news-panel {
+  max-height: 240px;
+  overflow-y: auto;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  background: var(--global-footer-bg-color);
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-item {
+  margin: 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.news-item:last-child {
+  border-bottom: 0;
+}
+
+.news-date {
+  display: inline-block;
+  min-width: 7.5rem;
+  color: var(--global-text-color-light);
+  font-weight: 600;
+}
+
+.news-text {
+  color: var(--global-text-color);
+}
+
+.teaching-list {
+  margin-top: 0.75rem;
+}
+
+.teaching-item {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.teaching-list .teaching-item:last-child {
+  border-bottom: 0;
+}
+
+.teaching-course {
+  margin: 0 0 0.35rem;
+  padding: 0;
+  border-bottom: 0 !important;
+  font-size: 1.05em;
+}
+
+.page__content .teaching-meta,
+.page__content .teaching-blurb {
+  margin: 0;
+}
+
+.teaching-meta {
+  color: var(--global-text-color-light);
+  font-size: 0.92em;
+}
+
+.teaching-blurb {
+  margin-top: 0.35rem !important;
+}
