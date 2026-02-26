@@ -13,9 +13,9 @@ author_profile: true
 
 <h2>Ongoing</h2>
 
-{% assign sorted_projects = site.projects | sort: "date" | reverse %}
+{% assign sorted_projects = site.projects | sort: "start_date" | reverse %}
 {% for post in sorted_projects %}
-  {% unless post.project_status == "published" %}
+  {% unless post.end_date %}
     {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
@@ -24,7 +24,7 @@ author_profile: true
 
 {% assign has_published = false %}
 {% for post in sorted_projects %}
-  {% if post.project_status == "published" %}
+  {% if post.end_date %}
     {% assign has_published = true %}
     {% include archive-single.html %}
   {% endif %}
