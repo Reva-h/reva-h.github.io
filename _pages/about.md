@@ -12,7 +12,7 @@ redirect_from:
 
 Prior to Princeton, I earned my BSc in Software Engineering from [George Mason University](https://cs.gmu.edu/) (Spring 2025), where I was part of the NLP group led by [Antonios Anastasopoulos](https://cs.gmu.edu/~antonis/).
 
-I've also had the privilege of working with [Jason Eisner](https://www.cs.jhu.edu/~jason/) through the Frederick Jelinek Memorial Summer Workshop on Speech and Language Technology at the [Johns Hopkins University Center for Speech and Language Processing (CLSP)](https://www.clsp.jhu.edu/).
+I've also had the privilege of working at the [Johns Hopkins University Center for Speech and Language Processing (CLSP)](https://www.clsp.jhu.edu/)  through the Frederick Jelinek Memorial Summer Workshop on Speech and Language Technology.
 
 My research interests broadly concern social media and lie at the intersection of natural language processing, social computing, and computational social science. I am interested in using computational techniques to explore how digital forms of communication influence our thinking. I’m eager to apply these insights to better social media platforms, aiming to foster more meaningful online interactions and raise awareness of the biases that such technologies can instill.
 
