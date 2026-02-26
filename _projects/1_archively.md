@@ -6,12 +6,13 @@ permalink: /projects/1_archively
 excerpt: 'Lead developer on Archively, an iOS app designed to support a study on digital well being by directing users to EMAs after completing Tiktok sessions and allowing users to upload their de-identified exported Tiktok data at the start and end of the study. Archively is built with a Flutter frontend and a FastAPI backend that utilizes Google Cloud services, such as Firebase Cloud Messaging, Data Store, and Cloud Run.'
 start_date: 2025-09-15
 end_date:
+ongoing: true
 location: CITP @ Princeton University
 collaborators:
-	- Marianne Aubin Le Quere
-	- Manoel Horta Ribeiro
-	- Andy Guess
-    - Tiffany Liu
+  - Marianne Aubin Le Quere
+  - Manoel Horta Ribeiro
+  - Andy Guess
+  - Tiffany Liu
 venue:
 slidesurl: 
 paperurl: 

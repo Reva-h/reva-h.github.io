@@ -17,6 +17,8 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
+  <div data-pjax-content>
+
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -37,7 +39,7 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.collection == 'projects' and page.start_date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Dates:</strong> <time datetime="{{ page.start_date | date_to_xmlschema }}">{{ page.start_date | date: "%B %Y" }}</time> – {% if page.end_date %}<time datetime="{{ page.end_date | date_to_xmlschema }}">{{ page.end_date | date: "%B %Y" }}</time>{% else %}Present{% endif %}{% if page.location %} | <strong><i class="fa fa-fw fa-location-dot" aria-hidden="true"></i> Location:</strong> {{ page.location }}{% endif %}</p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Dates:</strong> <time datetime="{{ page.start_date | date_to_xmlschema }}">{{ page.start_date | date: "%B %Y" }}</time> – {% if page.end_date %}<time datetime="{{ page.end_date | date_to_xmlschema }}">{{ page.end_date | date: "%B %Y" }}</time>{% else %}Present{% endif %}{% if page.ongoing %} | <strong>Status:</strong> Ongoing{% endif %}{% if page.location %} | <strong><i class="fa fa-fw fa-location-dot" aria-hidden="true"></i> Location:</strong> {{ page.location }}{% endif %}</p>
           {% if page.collaborators %}
             <p class="page__date"><strong><i class="fa fa-fw fa-users" aria-hidden="true"></i> Collaborators:</strong> {{ page.collaborators | join: ", " }}</p>
           {% endif %}
@@ -111,4 +113,5 @@ layout: default
       </div>
     </div>
   {% endif %}
+  </div>
 </div>

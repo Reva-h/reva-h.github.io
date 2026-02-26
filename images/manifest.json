@@ -1,5 +1,6 @@
 {
-	"name": "OOjs UI icon academic-progressive",
+	"name": "Reva Hirave",
+	"short_name": "Reva Hirave",
 	"icons": [
 		{
 			"src": "/images/favicon-192x192.png",
@@ -11,5 +12,9 @@
 			"sizes": "512x512",
 			"type": "image/png"
 		}
-	]
+	],
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#ffffff"
 }

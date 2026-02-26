@@ -11,28 +11,32 @@ author_profile: true
 
 {% include base_path %}
 
-<h2>Ongoing</h2>
+<div class="projects-list">
+
+<h2 class="archive__subtitle">Ongoing</h2>
 
 {% assign sorted_projects = site.projects | sort: "start_date" | reverse %}
 {% for post in sorted_projects %}
-  {% unless post.end_date %}
-    {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-
-<h2>Published</h2>
-
-{% assign has_published = false %}
-{% for post in sorted_projects %}
-  {% if post.end_date %}
-    {% assign has_published = true %}
-    {% include archive-single.html %}
+  {% if post.ongoing or post.end_date == nil or post.end_date == "" %}
+    {% include archive-single.html heading_level="h3" %}
   {% endif %}
 {% endfor %}
 
-{% unless has_published %}
-  <p>No publications yet, but stay tuned!</p>
+<h2 class="archive__subtitle">Previous</h2>
+
+{% assign has_previous = false %}
+{% for post in sorted_projects %}
+  {% if post.end_date and post.ongoing != true %}
+    {% assign has_previous = true %}
+    {% include archive-single.html heading_level="h3" %}
+  {% endif %}
+{% endfor %}
+
+{% unless has_previous %}
+  <p>No previous projects yet.</p>
 {% endunless %}
+
+</div>
 
 
 
