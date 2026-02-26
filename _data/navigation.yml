@@ -20,8 +20,8 @@ main:
   # - title: "Blog"
   #   url: /year-archive/
     
-  - title: "CV"
-    url: /files/rhirave_cv.pdf
+  - title: "Resume"
+    url: /files/rhirave_resume.pdf
     external: true
   # - title: "CV"
   #   url: /cv-json/
