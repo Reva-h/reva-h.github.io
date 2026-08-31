@@ -1,11 +1,31 @@
 {% include base_path %}
 
+{% if site.author.location or site.author.employer or site.author.email or site.author.linkedin %}
+<div class="page__footer-contact">
+  <ul class="social-icons">
+    {% if site.author.location %}
+      <li><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ site.author.location }}</li>
+    {% endif %}
+    {% if site.author.employer %}
+      <li><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ site.author.employer }}</li>
+    {% endif %}
+    {% if site.author.email %}
+      <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+    {% endif %}
+    {% if site.author.linkedin %}
+      <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
+
 {% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
 <div class="page__footer-follow">
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+      <li class="page__footer-follow-label--desktop"><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
+    <li class="page__footer-follow-label--mobile"><strong>Contact:</strong></li>
     {% if site.author.github %}
       <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}

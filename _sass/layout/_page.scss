@@ -43,6 +43,14 @@
   }
 }
 
+.page__title--home {
+  /* redundant with the site title already fixed in the nav bar on mobile */
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;

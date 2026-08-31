@@ -61,7 +61,12 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 2em;
     font-weight: 700;
+
+    /* the extra gap is only needed to separate the logo from sibling links,
+       which aren't there once the nav collapses to just the logo + hamburger */
+    @include breakpoint($large) {
+      padding-right: 2em;
+    }
   }
 }

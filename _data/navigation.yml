@@ -19,7 +19,11 @@ main:
 
   - title: "Teaching"
     url: /teaching/
-        
+
+  - title: "CV"
+    url: /files/rhirave_cv.pdf
+    external: true
+
   # - title: "Blog"
   #   url: /year-archive/
 

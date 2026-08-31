@@ -208,6 +208,7 @@
   .visible-links {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 
     li {
       flex-shrink: 0;

@@ -62,7 +62,8 @@
   font-size: $type-size-7;
 }
 
-.page__footer-follow {
+.page__footer-follow,
+.page__footer-contact {
   ul {
     margin: 0;
     padding: 0;
@@ -92,5 +93,34 @@
     a {
       white-space: nowrap;
     }
+  }
+}
+
+.page__footer-contact {
+  margin-bottom: 1em;
+
+  /* the sidebar already surfaces this on wider screens */
+  @include breakpoint($large) {
+    display: none;
+  }
+}
+
+.footer-sitemap-link {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: inline;
+  }
+}
+
+.page__footer-follow .page__footer-follow-label--mobile {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.page__footer-follow .page__footer-follow-label--desktop {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: inline-block;
   }
 }

@@ -130,6 +130,12 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
+
+  /* redundant with the site title already fixed in the nav bar on mobile */
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
 }
 
 .sidebar .author__desktop {
