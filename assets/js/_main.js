@@ -32,10 +32,10 @@ let setTheme = (theme) => {
 
   if (use_theme === "dark") {
     $("html").attr("data-theme", "dark");
-    $("#theme-icon").text("☾");
+    $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
   } else if (use_theme === "light") {
     $("html").removeAttr("data-theme");
-    $("#theme-icon").text("☀︎");
+    $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
   }
 };
 

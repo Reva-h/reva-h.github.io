@@ -84,6 +84,15 @@ screen.orientation.addEventListener("change", function () {
   updateNav();
 });
 
+// Re-check once web fonts finish loading: the initial call above can run before
+// fonts are ready, under-measuring text/icon widths and leaving items visible
+// that no longer fit once the real fonts render.
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(function () {
+    updateNav();
+  });
+}
+
 $btn.on('click', function () {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
