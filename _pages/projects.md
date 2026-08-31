@@ -11,7 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="projects-list">
+<div class="projects-list projects-page">
 
 {% assign sorted_projects = site.projects | sort: "start_date" | reverse %}
 {% for post in sorted_projects %}

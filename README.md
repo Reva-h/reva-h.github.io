@@ -26,15 +26,14 @@ This website includes:
 
 ```bash
 bundle install
-bundle exec jekyll serve --livereload --port 4002 --config _config.yml,_config_dev.yml
+JEKYLL_ENV=production bundle exec jekyll serve --livereload --port 4002 --config _config.yml,_config_dev.yml
 ```
 
-The `_config_dev.yml` override makes generated links point at `localhost` instead of the deployed site, so you can actually click around and see your changes.
+The `_config_dev.yml` override makes generated links point at `127.0.0.1:4002` instead of the deployed site, so you can actually click around and see your changes. `JEKYLL_ENV=production` is required too — Jekyll's `serve` command silently overrides `site.url` to `http://localhost:<port>` whenever it thinks it's in "development" mode (the default), which ignores `_config_dev.yml` entirely and can break asset loading on networks that treat `localhost` and `127.0.0.1` differently (e.g. restricted/proxied WiFi).
 
 Then open:
 
 - http://127.0.0.1:4002
-- http://localhost:4002
 
 ## Notes
 

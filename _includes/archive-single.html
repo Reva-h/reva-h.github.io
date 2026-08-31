@@ -65,7 +65,7 @@
     
     {% if post.citation %}
       {% capture authors %}{% if post.authors %}<span class="pub-authors">{{ post.authors }}</span> {% endif %}{% endcapture %}
-      <p class="archive__item-citation">Recommended citation: {{ authors }}{{ post.citation }}
+      <p class="archive__item-citation">{{ authors }}{{ post.citation }}
         {% if post.paperurl or post.slidesurl or post.bibtexurl %}<br />{% endif %}
         {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Download Paper</a>{% endif %}
         {% if post.paperurl and post.slidesurl %} | {% endif %}

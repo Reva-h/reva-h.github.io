@@ -167,14 +167,15 @@
 
 .projects-list .archive__item p.archive__item-citation {
   margin-top: 0.75rem;
-  padding-top: 0.5rem;
-  border-top: 1px dashed var(--global-border-color);
   font-size: 0.85em;
+  color: var(--global-text-color-light);
 }
 
 .archive__item-citation .pub-authors {
   font-style: italic;
-  font-size: 0.9em;
+}
+
+.projects-page .archive__item-excerpt {
   color: var(--global-text-color-light);
 }
 
