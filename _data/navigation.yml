@@ -8,21 +8,21 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Projects"
+  - title: "Ongoing Projects"
     url: /projects/
 
-  # - title: "Talks"
-  #   url: /talks/    
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Talks"
+    url: /talks/
 
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/
         
   # - title: "Blog"
   #   url: /year-archive/
-    
-  - title: "Resume"
-    url: /files/rhirave_resume.pdf
-    external: true
+
   # - title: "CV"
   #   url: /cv-json/
     

@@ -26,8 +26,10 @@ This website includes:
 
 ```bash
 bundle install
-bundle exec jekyll serve --livereload --port 4002
+bundle exec jekyll serve --livereload --port 4002 --config _config.yml,_config_dev.yml
 ```
+
+The `_config_dev.yml` override makes generated links point at `localhost` instead of the deployed site, so you can actually click around and see your changes.
 
 Then open:
 

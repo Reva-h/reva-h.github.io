@@ -14,7 +14,7 @@ Prior to Princeton, I earned my BSc in Software Engineering from [George Mason U
 
 I've also had the privilege of working at the [Johns Hopkins University Center for Speech and Language Processing (CLSP)](https://www.clsp.jhu.edu/)  through the Frederick Jelinek Memorial Summer Workshop on Speech and Language Technology.
 
-My research interests broadly concern social media and lie at the intersection of natural language processing, social computing, and computational social science. I am interested in using computational techniques to explore how digital forms of communication influence our thinking. I’m eager to apply these insights to better social media platforms, aiming to foster more meaningful online interactions and raise awareness of the biases that such technologies can instill.
+I study how sociotechnical systems shape human behavior and social outcomes, with a focus on online communities, social media, and digital well-being. I use computational social science, natural language processing, and causal inference to understand how platform design and online environments influence discourse, attitudes, and user behavior.
 
 ## News
 

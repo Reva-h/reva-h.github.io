@@ -15,13 +15,13 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"{% if link.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a id="theme-toggle-control" role="button" aria-label="Toggle dark mode" title="toggle theme">
-              <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
-            </a>
-          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
+        <div id="theme-toggle" class="masthead__menu-item">
+          <a id="theme-toggle-control" role="button" aria-label="Toggle dark mode" title="toggle theme">
+            <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
+          </a>
+        </div>
       </nav>
     </div>
   </div>

@@ -142,9 +142,11 @@
 
 .projects-list .list__item {
   padding: 0.85rem 0;
-  border-top: 1px solid var(--global-border-color);
   border-bottom: 1px solid var(--global-border-color);
-  margin-bottom: 0.75rem;
+}
+
+.projects-list .list__item:first-child {
+  border-top: 1px solid var(--global-border-color);
 }
 
 .projects-list .archive__item-title {
