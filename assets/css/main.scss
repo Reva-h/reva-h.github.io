@@ -106,8 +106,14 @@
   margin-top: 0.75rem;
 }
 
+.teaching-list .archive__subtitle {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--global-text-color);
+}
+
 .teaching-item {
-  padding: 0.85rem 0;
+  padding: 0.6rem 0;
   border-bottom: 1px solid var(--global-border-color);
 }
 
@@ -116,24 +122,21 @@
 }
 
 .teaching-course {
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.15rem;
   padding: 0;
   border-bottom: 0 !important;
   font-size: 1.05em;
-}
-
-.page__content .teaching-meta,
-.page__content .teaching-blurb {
-  margin: 0;
+  font-weight: 600;
 }
 
 .teaching-meta {
+  margin: 0;
   color: var(--global-text-color-light);
-  font-size: 0.92em;
+  font-size: 0.85em;
 }
 
 .teaching-blurb {
-  margin-top: 0.35rem !important;
+  margin: 0.25rem 0 0;
 }
 
 .projects-list {
@@ -160,6 +163,17 @@
 
 .projects-list .archive__item-excerpt {
   margin-top: 0.35rem;
+}
+
+.projects-list .archive__item p.archive__item-citation {
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--global-border-color);
+  font-size: 0.85em;
+}
+
+.archive__item-citation .pub-authors {
+  font-style: italic;
 }
 
 .site-mark {

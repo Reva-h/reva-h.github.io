@@ -8,27 +8,29 @@ author_profile: true
 {% include base_path %}
 
 <div class="teaching-list">
+
+<h2 class="archive__subtitle">Princeton University</h2>
+
 {% for post in site.teaching reversed %}
-  {% if post.type contains "Graduate" %}
+  {% if post.venue contains "Princeton" %}
     <article class="teaching-item">
       <h3 class="teaching-course">{{ post.title }}</h3>
-      <p class="teaching-meta"><strong>{{ post.role }}</strong> · {{ post.venue }} · {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+      <p class="teaching-meta"><strong>{{ post.role }}</strong> · {{ post.venue | split: ", " | last }} · {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
       <p class="teaching-blurb">{{ post.blurb }}</p>
     </article>
   {% endif %}
 {% endfor %}
-</div>
 
+<h2 class="archive__subtitle">George Mason University</h2>
 
-
-<div class="teaching-list">
 {% for post in site.teaching reversed %}
-  {% if post.type contains "Undergraduate" %}
+  {% if post.venue contains "George Mason" %}
     <article class="teaching-item">
       <h3 class="teaching-course">{{ post.title }}</h3>
-      <p class="teaching-meta"><strong>{{ post.role }}</strong> · {{ post.venue }} · {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+      <p class="teaching-meta"><strong>{{ post.role }}</strong> · {{ post.venue | split: ", " | last }} · {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
       <p class="teaching-blurb">{{ post.blurb }}</p>
     </article>
   {% endif %}
 {% endfor %}
+
 </div>
