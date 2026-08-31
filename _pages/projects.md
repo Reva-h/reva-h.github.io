@@ -2,6 +2,7 @@
 layout: archive
 title: "Ongoing Projects"
 permalink: /projects/
+description: "Research projects by Reva Hirave on online toxicity, causal inference, and NLP at Princeton CITP."
 author_profile: true
 ---
 

@@ -133,19 +133,22 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "r_hirave"
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "reva.JPG" # Social media default site image
+og_description           : "Fully-funded MSE CS Student @ CITP, Princeton University" # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person
+  name                   : Reva Hirave
   links: # An array of links to social media profiles
+    - "https://github.com/reva-h"
+    - "https://www.linkedin.com/in/reva-hirave"
+    - "https://twitter.com/r_hirave"
 
 
 # Analytics

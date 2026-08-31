@@ -2,6 +2,7 @@
 layout: archive
 title: "CV"
 permalink: /cv/
+description: "Curriculum vitae of Reva Hirave, MSE Computer Science student at Princeton CITP."
 author_profile: true
 redirect_from:
   - /resume
