@@ -66,6 +66,17 @@
   font-display: swap;
 }
 
+.callout-banner {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--global-border-color);
+  border-left: 4px solid var(--global-link-color);
+  border-radius: 6px;
+  background: var(--global-footer-bg-color);
+  color: var(--global-text-color);
+  line-height: 1.5;
+}
+
 .news-panel {
   max-height: 240px;
   overflow-y: auto;

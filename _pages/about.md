@@ -16,6 +16,10 @@ I've also had the privilege of working at the [Johns Hopkins University Center f
 
 I study how sociotechnical systems shape human behavior and social outcomes, with a focus on online communities, social media, and digital well-being. I use computational social science, natural language processing, and causal inference to understand how platform design and online environments influence discourse, attitudes, and user behavior.
 
+<div class="callout-banner" role="note">
+  📢 I am on both the full-time job and PhD market for a start date of summer or fall 2027! I'm seeking full time research roles in data science, HCI, and/or CSS. Feel free to reach out if you want to chat :)
+</div>
+
 ## News
 
 <div class="news-panel" role="region" aria-label="News and announcements">
